@@ -34,6 +34,7 @@
             </ul>
         </nav>
     </div>
+    <div class="banner"></div>
     <div id="content">
         <div class="h-65" id="bases"></div>
         <div class="content">
@@ -146,86 +147,101 @@
 
             <h2 id="sgbd">Sistemas Gestores de Bases de Datos</h2>
             <p>Un sistema gestor de bases de datos (SGBD) es un software constituido por una serie de programas
-                dirigidos a crear, gestionar y administrar la información que se encuentra en la base de datos. Su
+                dirigidos a crear, gestionar y administrar la información que se encuentra en la base de datos.<br>Su
                 principal objetivo es servir de interfaz entre los usuarios y las aplicaciones para facilitar la
                 organización de los datos, garantizar su accesibilidad, calidad e integridad, brindando a su vez una
-                manera eficaz de administrar esa información.
-                El lenguaje de manipulación, un lenguaje de definición de datos y un lenguaje de consulta son los tres
+                manera eficaz de administrar esa información.<br><br>
+                El <b>lenguaje de manipulación, un lenguaje de definición de datos y un lenguaje de consulta</b> son los
+                tres
                 componentes de un gestor de base de datos; por lo que puede trabajar a diferentes niveles, pero es
-                invisible para el usuario final.</p>
+                invisible para el usuario final.</p><br>
             <p>Un sistema de gestión de bases de datos no solo permite administrar la información y mantener su
-                consistencia, sino que brinda la posibilidad de construir y definir la base de datos a diferentes
-                niveles de abstracción para distintas aplicaciones, facilitando los procesos y su mantenimiento. Permite
-                realizar las operaciones sobre la base de datos para luego brindar la información al usuario de forma
-                eficiente y segura. Por tanto, entre las funciones de un gestor de bases de datos se encuentran:
-
-                Definición de los datos. Permite definir todos los objetos de la base de datos partiendo de definiciones
-                en versión fuente, de manera que se pueden almacenar según su tipo o estructura.
-                Manipulación de los datos. Responde a las solicitudes del usuario para realizar operaciones de
-                eliminación, actualización y extracción de datos, pero gracias a su independencia también permite
-                modificar el esquema físico o lógico de la base de datos sin realizar cambios en las aplicaciones que la
-                utilizan.
-                Preservar la seguridad e integridad de los datos. Ante una petición, el gestor de bases de datos aplica
+                consistencia, sino que brinda la posibilidad de <b>construir y definir la base de datos</b> a diferentes
+                niveles de <em>abstracción</em> para distintas aplicaciones, facilitando los procesos y su
+                mantenimiento.<br>
+                Permite realizar las operaciones sobre la base de datos para luego brindar la información al usuario de
+                forma
+                eficiente y segura.<br><br>
+                Por tanto, entre las funciones de un gestor de bases de datos se encuentran:
+                <span class="title">Definición de los datos.</span> Permite definir todos los objetos de la base de
+                datos partiendo de definiciones
+                en versión fuente, de manera que se pueden almacenar según su tipo o estructura.<br><br>
+                <span class="title">Manipulación de los datos.</span> Responde a las solicitudes del usuario para
+                realizar operaciones de
+                <b>eliminación, actualización y extracción de datos</b>, pero gracias a su independencia también permite
+                modificar el <b>esquema físico o lógico</b> de la base de datos sin realizar cambios en las aplicaciones
+                que la
+                utilizan. <br><br>
+                <span class="title">Preservar la seguridad e integridad de los datos.</span> Ante una petición, el
+                gestor de bases de datos aplica
                 las medidas de seguridad definidas para garantizar la validez e integridad de los datos, evitando además
-                los ataques o accesos de usuarios no autorizados.
-                Recuperación y restauración de los datos. Ante un fallo o actualización inconsistente, los gestores de
-                bases de datos también brindan la posibilidad de recuperar y restaurar la información.
-                ¿Qué tipos de gestores de bases de datos existen?
+                los ataques o accesos de usuarios no autorizados.<br><br>
+                <span class="title">Recuperación y restauración de los datos.</span> Ante un fallo o actualización
+                inconsistente, los gestores de
+                bases de datos también brindan la posibilidad de recuperar y restaurar la información. <br><br>
+                <hr><br>
+            <p>
+                <em style="text-align: center;"><span class="title">¿Qué tipos de gestores de bases de datos
+                        existen?</span></em><br><br>
                 Existen diferentes modelos para administrar los registros, los cuales difieren fundamentalmente en la
-                forma en que se estructuran los datos. El modelo de base de datos relacional es el más popular y común,
-                como es el caso de MySQL y Oracle Database. Los datos se estructuran en filas de tabla con la
+                <b>forma en que se estructuran los datos</b>. El modelo de base de datos <b>relacional</b> es el más popular y común,
+                como es el caso de <em>MySQL</em> y <em>Oracle Database</em>. <br>
+                Los datos se estructuran en filas de tabla con la
                 posibilidad de crear diferentes relaciones entre las filas y presentarlas en columnas con claves
                 comunes.
 
-                En el modelo de base de datos jerárquico los datos se organizan en relaciones padre-hijo siguiendo una
-                estructura similar a la de un árbol, como la de IMS de IBM. Otra manera de organizar los datos es el
-                modelo de red, en el que la información se estructura en forma de red con relaciones complejas y se
-                pueden seguir diferentes caminos para rastrear cada registro.
+                En el modelo de base de datos <span class="title">jerárquico</span> los datos se organizan en relaciones padre-hijo siguiendo una
+                estructura similar a la de un árbol, como la de IMS de IBM. <br><br>Otra manera de organizar los datos es el
+                <span class="title">modelo de red</span>, en el que la información se estructura en forma de red con relaciones complejas y se
+                pueden seguir diferentes caminos para rastrear cada registro. <br><br>
 
-                En el caso del modelo de bases de datos orientada a objetos, como PostgreSQL, normalmente usado para
+                En el caso del modelo de bases de datos <span class="title">orientada a objetos</span>, como <em>PostgreSQL</em>, normalmente usado para
                 datos gráficos, no solo se tiene en cuenta la relación entre los registros de datos, sino también la
-                herencia, de manera que los objetos pueden transferir algunos de sus atributos a otros objetos. Por
-                último, el modelo de bases de datos orientadas a documentos permite almacenar los registros en
-                diferentes documentos, como es el caso de CouchDB y OrientDB.</p>
+                herencia, de manera que los objetos pueden transferir algunos de sus atributos a otros objetos. <br><br>
+                Por último, el modelo de bases de datos <span class="title">orientadas a documentos</span> permite almacenar los registros en
+                diferentes documentos, como es el caso de CouchDB y OrientDB.
+            </p>
+
+            </p>
 
             <h2 id="relacional">Modelo Relacional</h2>
             <p>El modelo relacional, para el modelado y la gestión de bases de datos, es un modelo de datos basado en la
-                lógica de predicados y en la teoría de conjuntos.
+                lógica de predicados y en la teoría de conjuntos. <br>
 
-                Tras ser postuladas sus bases en 1970 por Edgar Frank Codd, de los laboratorios IBM en San José
-                (California), no tardó en consolidarse como un nuevo paradigma en los modelos de base de datos.
+                Tras ser postuladas sus bases en 1970 por <span class="title">Edgar Frank Codd</span>, de los laboratorios IBM en San José
+                (California), no tardó en consolidarse como un nuevo paradigma en los modelos de base de datos.<br><br>
 
-                Su idea fundamental es el uso de relaciones. Estas relaciones podrían considerarse en forma lógica como
+                Su idea fundamental es el uso de <span class="title">relaciones</span> . Estas relaciones podrían considerarse en forma lógica como
                 conjuntos de datos llamados tuplas. Pese a que esta es la teoría de las bases de datos relacionales
                 creadas por Codd, la mayoría de las veces se conceptualiza de una manera más fácil de imaginar, pensando
-                en cada relación como si fuese una tabla que está compuesta por registros (cada fila de la tabla sería
-                un registro o “tupla”) y columnas (también llamadas “campos”).
+                en cada relación como si fuese una tabla que está compuesta por registros <b>(cada fila de la tabla sería
+                un registro o “tupla”)</b> y columnas <b>(también llamadas “campos”).</b><br><br>
 
                 Es el modelo más utilizado en la actualidad para modelar problemas reales y administrar datos
-                dinámicamente.
+                dinámicamente.<br>
 
-                El modelo relacional desarrolla un esquema de base de datos (data base schema) a partir del cual se
-                podrá realizar el modelo físico o de implementación en el DBMS.
+                El modelo relacional desarrolla un esquema de base de datos <b>(data base schema)</b> a partir del cual se
+                podrá realizar el modelo físico o de implementación en el <b>DBMS.</b><br><br>
 
-                Este modelo esta basado en que todos los datos están almacenados en tablas (entidades/relaciones) y cada
+                Este modelo esta basado en que todos los datos están almacenados en tablas <b>(entidades/relaciones)</b> y cada
                 una de estas es un conjunto de datos, por tanto una base de datos es un conjunto de relaciones. La
-                agrupación se origina en la tabla: tabla -> fila (tupla) -> campo (atributo)
+                agrupación se origina en la tabla:<b> tabla -> fila (tupla) -> campo (atributo)</b><br><br>
 
-                El Modelo Relacional se ocupa de:
+                El <span class="title">Modelo Relacional</span> se ocupa de:<br>
+                <b>-La estructura de datos<br>
+                -La manipulación de datos<br> 
+                -La integridad de los datos.</b> <br><br>
+                
+                Donde las <span class="title">relaciones</span> estan formadas por :<br>
+                <b>-Atributos (columnas) <br> 
+                -Tuplas (Conjunto de filas)<br><br></b>
+                
+                Existen dos formas para la construcción de <span class="title">modelos relacionales:</span><br><br>
 
-                La estructura de datos
-                La manipulación de datos
-                La integridad de los datos
-                Donde las relaciones estan formadas por :
-
-                Atributos (columnas)
-                Tuplas (Conjunto de filas)
-                Existen dos formas para la construcción de modelos relacionales:
-
-                Creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el
-                esquema más óptimo,
-                O, convertir el modelo entidad relación (ER) en tablas, con una depuración lógica y la aplicación de
-                restricciones de integridad.</p>
+                -Creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el
+                esquema más óptimo. <br>
+                -O convertir el <b>modelo entidad relación (ER)</b>  en tablas, con una depuración lógica y la aplicación de
+                restricciones de integridad.<br><br></p>
         </div>
         <div class="h-65" id="sql"></div>
         <div class="content">
@@ -336,60 +352,129 @@
 
             <h2 id="dml">DML</h2>
             <p>
-                Lenguaje de Manipulación de Datos (Data Manipulation Language, DML) es un lenguaje proporcionado por los
-                sistemas gestores de bases de datos que permite a los usuarios de la misma llevar a cabo las tareas de
-                consulta o modificación de los datos contenidos en las Bases de Datos del Sistema Gestor de Bases de
-                Datos. 1​
+                Lenguaje de Manipulación de Datos <em>(Data Manipulation Language, DML)</em> es un lenguaje proporcionado por los
+                sistemas gestores de bases de datos que permite a los usuarios de la misma <b>llevar a cabo las tareas de
+                consulta o modificación de los datos</b> contenidos en las Bases de Datos del Sistema Gestor de Bases de
+                Datos. <br><br>
 
                 El lenguaje de manipulación de datos más popular hoy en día es SQL, usado para recuperar y manipular
-                datos en una base de datos relacional. Otros ejemplos de DML son los usados por bases de datos IMS/DL1,
-                CODASYL u otras.
+                datos en una base de datos relacional. Otros ejemplos de DML son los usados por bases de datos <em>IMS/DL1</em>,
+                <em>CODASYL</em> u otras.
             </p>
             <h2 id="ddl">DDL</h2>
             <p>
-                Es un lenguaje de programación para definir estructuras de datos, proporcionado por los sistemas
-                gestores de bases de datos, en este caso PostgreSQL. En inglés, Data Definition Language, de ahí sus
+                Es un lenguaje de programación para <b>definir estructuras de datos</b>, proporcionado por los sistemas
+                gestores de bases de datos, en este caso <em>PostgreSQL</em>. En inglés, <b>Data Definition Language</b>, de ahí sus
                 siglas DDL.
                 <br><br>
-                Este lenguaje permite a los programadores de un sistema gestor de base de datos, como Postgres, definir
-                las estructuras que almacenarán los datos así como los procedimientos o funciones que permitan
-                consultarlos.
+                Este lenguaje permite a los programadores de un sistema gestor de base de datos, como Postgres, <b>definir
+                las estructuras</b> que almacenarán los datos así como los procedimientos o funciones que permitan
+                consultarlos. <br><br>
 
-                Para definir las estructura disponemos de tres sentencias:
+                Para definir las estructura disponemos de <span class="title">tres sentencias</span>: <br><br>
 
-                CREATE, se usa para crear una base de datos, tabla, vistas, etc.
-                ALTER, se utiliza para modificar la estructura, por ejemplo añadir o borrar columnas de una tabla.
-                DROP, con esta sentencia, podemos eliminar los objetos de la estructura, por ejemplo un índice o una
+                <b>CREATE</b>, se usa para crear una base de datos, tabla, vistas, etc. <br>
+                <b>ALTER</b>, se utiliza para modificar la estructura, por ejemplo añadir o borrar columnas de una tabla. <br>
+                <b>DROP</b>, con esta sentencia, podemos eliminar los objetos de la estructura, por ejemplo un índice o una
                 secuencia.
             </p>
             <h2 id="funciones">Funciones</h2>
             <p>
-                UCASE() - Convierte un campo a mayúsculas
-                LCASE() - Convierte un campo a minúsculas
-                MID() - Extrae caracteres de un campo de texto
-                LEN() - Devuelve la longitud de un campo de texto
-                NOW() - Devuelve la hora y fecha actuales del sistema
-                FORMAT() - Da formato a un formato para mostrarlo
-            </p>
-            <h2 id="prog">Programación PL / SQL</h2>
+                <b>UCASE()</b> Convierte un campo a mayúsculas <br><br>
+                <b>LCASE()</b> Convierte un campo a minúsculas <br><br>
+                <b>MID()</b> Extrae caracteres de un campo de texto <br><br>
+                <b>LEN()</b> Devuelve la longitud de un campo de texto <br><br>
+                <b>NOW()</b> Devuelve la hora y fecha actuales del sistema <br><br>
+                <b>FORMAT()</b> Da formato a un formato para mostrarlo
+            </p> 
+            <h2 id="prog">Programación PL / SQL</h2> 
             <p>
-                PL/SQL es el lenguaje de programación que proporciona Oracle para extender el SQL estándar con otro tipo
-                de instrucciones y elementos propios de los lenguajes de programación.
+                PL/SQL es el lenguaje de programación que proporciona Oracle para <b>extender el SQL estándar</b> con otro tipo
+                de instrucciones y elementos propios de los lenguajes de programación. <br><br>
 
-                Con PL/SQL vamos a poder programar las unidades de programa de la base de datos Oracle:
+                Con PL/SQL vamos a poder <b>programar las unidades de programa de la base de datos Oracle:</b><br>
 
-                Procedimientos almacenados
-                Funciones
-                Triggers
-                Scripts
-                Pero además, PL/SQL nos permite realizar programas sobre las siguientes herramientas de Oracle:
+                <span class="title">Procedimientos almacenados</span><br>
+                <span class="title">Funciones</span><br>
+                <span class="title">Triggers</span><br>
+                <span class="title">Scripts</span><br><br>
 
-                Oracle Forms
-                Oracle Reports
-                Oracle Graphics
-                Oracle Aplication Server
+                Pero además, PL/SQL nos permite <b>realizar programas</b> sobre las siguientes herramientas de Oracle: <br>
+
+                <span class="title">Oracle Forms</span><br>
+                <span class="title">Oracle Reports</span><br>
+                <span class="title">Oracle Graphics</span><br>
+                <span class="title">Oracle Aplication Server</span>
             </p>
             <h2 id="optim">Optimización básica de SQL</h2>
+            <p>El primer tip de optimización de una base de datos SQL, es invertir el tiempo en aprender SQL a detalle.
+                En muchas ocasiones, un mismo resultado puede obtenerse con distintos tipos de consultas, en ocasiones,
+                3 consultas se pueden ejecutar en una sola.
+                Para que tú puedas analizar y concluir cuál es la mejor forma de obtener un resultado complejo, debes de
+                conocer las distintas posibilidades y el impacto que tiene cada una de ellas.</p>
+            <p>Dicho esto, a continuación una serie de revisiones generales que puedes aplicar para muchos tipos de
+                problemas de rendimiento en la ejecución de una consulta.
+
+                Índices
+                Los motores de bases de datos SQL pueden agregar índices a ciertas columnas que aceleran las queries.
+
+                Este proceso se actualiza en inserción por lo que hay un trade off al agregar un index, inserciones
+                ligeramente más lentas y consultas más rápidas.
+
+                El uso correcto de índices puede acelerar consultas en tablas con muchos registros, pero sobre todo, el
+                mal uso de ellos puedes traducirse en consultas muy lentas que afectan el rendimiento de la página
+
+                Una de las principales por las que una consulta se ejecuta muy lento, es que hagas operaciones sobre un
+                campo que no tiene un index.
+                En otros escenarios los indexes están pero no se están usando
+                El problema de N+1 consultas
+                El problema de N+1 queries describe los escenarios en los que por cada elemento de una lista con la que
+                trabajamos, como en el ejemplo la lista de cursos se introduce un query nuevo, es solo una referencia,
+                ya que en el mundo real es fácil introducir problemas de N+2, N+3 etc. donde cada elemento en la lista
+                introduce múltiples queries.
+
+                En los escenarios donde las consultas son escritas manualmente, es prácticamente imposible encontrar uno
+                de estos casos, normalmente los encontramos como resultado del mal uso de una librería para el manejo de
+                la base de datos en nuestro código.
+
+                Para solucionar estos escenarios, la recomendación general es;hacer una carga anticipada de los
+                registros usando alguno de los distintos mecanismos que nuestras librerías de base de datos ofrecen.
+                Esto usualmente se traduce en el uso correcto de operaciones JOIN en nuestras consultas.
+                Campos caché
+                Aunque el concepto campos de caché acaba de ser inventado por mí al redactar este artículo, esta
+                estrategia es muy común y dependiendo del escenario en el que funcionen estos campos, reciben nombres
+                distintos, yo decidí agrupar estos escenarios bajo el nombre campos caché.
+                Caché de conteo
+                Considera un ejemplo como el de CódigoFacilito, donde tenemos una tabla cursos y una tabla adicional con
+                los cursos que ha tomado cada estudiante, si bien la tabla cursos es relativamente pequeña con cientos
+                de registros, la tabla de los cursos tomados por los alumnos tiene cientos de miles de registros.
+
+                Resulta que una de las consultas más comunes es saber cuántos cursos tiene cada alumno o cuáles son los
+                cursos con más alumnos. Estos escenarios representan un problema de desafío porque para realizar el
+                conteo hay que considerar el tamaño de cada tabla, en este ejemplo, la tabla con los cursos tomados por
+                los alumnos es grande.
+
+                Para evitar que, en cada ocasión que queramos saber la cantidad de alumnos en un curso, consultemos la
+                tabla grande, decidimos agregar una consulta a la tabla cursos, con el conteo de registros en la tabla
+                grande:
+                Otro tipo de campos caché
+                Casi cualquier operación costosa, llámense sumas, conteos, joins o promedios, pueden beneficiarse en
+                velocidad con un campo caché.
+
+                Estos campos deben seleccionarse cuidadosamente, ya que los beneficios vienen con un costo en el momento
+                de escritura.
+
+                Recientemente en un caso dentro de nuestra plataforma, reducimos el tiempo de ejecución de una consulta,
+                colocando una relación con otra tabla que antes se calculaba vía JOINs.
+                Conclusión
+                Eston son solo algunos tips que puede seguir para optimizar tus consultas, hay muchos más que aplican en
+                escenarios distintos a los que aquí hemos cubierto.
+
+                Para cada caso es importante: 1. Medir 2. Conocer formas alternas de llegar al mismo resultado
+
+                Recuerda que para sacar el mayor provecho del tiempo que inviertes en optimización, debes concentrarte
+                en los problemas cuya solución traiga el mayor impacto en los resultados.
+            </p>
         </div>
         <div class="h-65" id="oracle"></div>
         <div class="content">
@@ -416,8 +501,8 @@
                 archivo.
                 <br> De esta manera se consigue, además de reducir costes, minimizar el riesgo de pérdida de
                 información.
-                <br> Entre las acciones de Oracle se pueden destacar las siguientes: soporte de transacciones,
-                estabilidad y soporte multiplataforma de Windows, Linux, Mac OS X, Unix y BDS.
+                <br> Entre las acciones de Oracle se pueden destacar las siguientes: <b>soporte de transacciones,
+                    estabilidad y soporte multiplataforma de Windows, Linux, Mac OS X, Unix y BDS.</b>
             </p>
             <h2 id="servicios">Servicios</h2>
             <p> <span class="title">Oracle Consulting</span> <br>
@@ -427,19 +512,57 @@
                     (CX), Servicios de gestión de la experiencia del cliente (CXM)</b> <br> <br>
                 <span class="title">Oracle Premier Support </span> <br>
                 Oracle Premier Support ofrece un mantenimiento integral, características y funcionalidad para los
-                productos de Oracle, incluidos Oracle E-Business Suite, Hyperion, JD Edwards EnterpriseOne, PeopleSoft,
-                Siebel CRM, Oracle Database, software, sistemas y productos de almacenamiento. <br><br>
+                productos de Oracle, incluidos <b>Oracle E-Business Suite, Hyperion, JD Edwards EnterpriseOne,
+                    PeopleSoft,
+                    Siebel CRM, Oracle Database, software, sistemas y productos de almacenamiento.</b> <br><br>
                 <span class="title">Oracle University </span><br>
+                Oracle University ayuda a los clientes a adquirir aptitudes con las aplicaciones de <b>Oracle Cloud
+                Infrastructure (OCI) y SaaS.</b>  Oracle Guided Learning está integrado con <b>Oracle Cloud Applications</b> , con lo
+                que aporta información y orientación actualizadas en al flujo de trabajo del usuario. <br><br>
 
                 <span class="title">Oracle Financing </span><br>
+                Oracle Financing ofrece: <b>flexibilidad, elección y una guía</b> para quienes estan
+                empezando o no saben por donde seguir <br><br>
 
                 <span class="title">Advanced Customer Services </span><br>
+                Oracle Advanced Customer Services proporciona una asistencia fundamental para los sistemas de ingeniería
+                de Oracle, con servicios que abarcan desde la configuración hasta la supervisión o el soporte avanzado.
+                <br><br>
 
                 <span class="title">Oracle Customer Success </span><br>
+                Oracle guía a sus usuarios con contenido y herramientas digitales intuitivas para ayudarlos a impulsar
+                su adopción
+                y maximizar el valor de su inversión en Oracle.
 
             </p>
             <h2 id="sqloracle">SQL de Oracle</h2>
-            <h2 id="adminoracle">Administración de Oracle</h2>
+            <p>En Oracle se usa el lenguaje <span class="title">SQL*Plus: </span> disponible en todos los sistemas
+                informáticos que utilizan el software de cliente o servidor
+                Oracle. Como herramienta de línea de comandos para la administración de bases de datos permite la
+                entrada de comandos, la consulta de datos y la modificación o eliminación de archivos de la base de
+                datos
+
+            </p>
+            <h2 id="adminoracle">Administración en Oracle</h2>
+            <p>
+                Oracle ofrece varias herramientas de administración:<br><br>
+
+                <span class="title">SQL*Plus:</span> herramienta de base de datos que permite editar y ejecutar
+                consultas SQL.<br><br>
+
+                <span class="title">Oracle Enterprise Manager Database Express:</span> aplicación Web que permite
+                administrar gráficamente una
+                única base de datos.<br><br>
+
+                <span class="title">Oracle Enterprise Manager Cloud Control:</span> aplicación Web que permite
+                administrar de manera centralizada
+                varias bases de datos.<br><br>
+
+                <span class="title">Oracle SQL Developer:</span> aplicación gráfica que permite ejecutar <b>consultas o
+                scripts SQL</b> , gestionar los
+                objetos de una base de datos (tablas, vistas, etc.), desarrollar y utilizar programas <b>PL/SQL</b> y realizar
+                algunas tareas de administración.<br><br>
+            </p>
         </div>
         <div id="back" class="back"><a href="#start-screen"><i class="fa fa-home" aria-hidden="true"></i></a></div>
     </div>
