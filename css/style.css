@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --color-green: #6de08e;
+    --color-lightblue: #5ba4cb;
+    --color-darkblue: #35718a;
+    --color-orange: #ff905b;
+    --color-light: #e2e2e2;
+    --color-lighter: #fff;
+    --color-dark: #2e2e2e;
+}
+body{
+    position: relative;
+}
+
+#start-screen{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, var(--color-dark), var(--color-lightblue), var(--color-light));
+}
+#start-screen button{
+    position: absolute;
+    bottom: 4%; right: 4%;
+    padding: 12px 20px;
+    width: 20%;
+    background-color: var(--color-lightblue);
+    border: none;
+    border-radius: 10px;
+    border-top: 8px solid var(--color-darkblue);
+    color: var(--color-dark);
+    box-shadow: 0 0 10px 1px var(--color-dark);
+    font-weight: 700;
+    font-size: medium;
+    transition: ease .3s;
+}
+#start-screen button:hover{
+    transform: scale(102%);
+    box-shadow: 0 0 18px 1px var(--color-dark);
+}
+#start-screen p{
+    position: absolute;
+    top: 2%;
+    color: var(--color-lighter);
+    font-size: smaller;
+    font-weight: 600;
+}
+#indice{
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(var(--color-darkblue), var(--color-green));
+    box-shadow: 0 0 18px 1px var(--color-dark);
+    border-top: 8px solid var(--color-lighter);
+    z-index: 2;
+}
+#indice ul{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#indice a{
+    padding: 18px;
+    width: 33%;
+    color: var(--color-dark);
+    font-weight: 700;
+}
+#indice a:hover{
+    color: var(--color-light);
+    transition: ease .1s;
+}
+#content{
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--color-light);
+}
+.content{
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid var(--color-lighter);
+}
+.content h1{
+    color: var(--color-lightblue);
+    border-bottom: 3px solid var(--color-lightblue);
+    margin-bottom: 10px;
+}
+.content h2{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    margin-left: 10%;
+    
+    font-size: larger;
+    color: var(--color-dark);
+    text-decoration: underline;
+}
+.content p, .content h3{
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.submenu{
+    position: sticky;
+    top: 65px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: var(--color-light);
+    padding: 10px;
+    z-index: 1;
+}
+.submenu ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.submenu a{
+    color: var(--color-darkblue);
+    margin-right: 20px;
+    padding: 0px 10px;
+    border-left: 1px solid var(--color-darkblue);
+}
+.submenu a:hover{
+    color: var(--color-lightblue);
+    border-left: 1px solid var(--color-lightblue);
+}
+.back{
+    position: sticky;
+    bottom: 0;
+    padding: 10px;
+    text-align: right;
+    z-index: 1000;
+}
+.back a{
+    color: var(--color-dark);
+}
+footer{
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    background: var(--color-dark);
+    color: var(--color-lighter);
+    border-top: 3px solid var(--color-lighter);
+}
+footer a{
+    color: var(--color-light);
+    font-weight: 700;
+}
+footer p{
+    font-size: small;
+    margin: 10px;
+}
+b{
+    font-weight: 600;
+    color: var(--color-darkblue);
+    text-decoration: underline;
+}
+abbr{
+    font-weight: 600;
+    color: var(--color-orange);
+    cursor: pointer;
+    text-decoration: underline;
+}
+span{
+    font-weight: 500;
+    font-family: monospace;
+    color: var(--color-darkblue);
+    background-color: var(--color-light);
+}
+.title{
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--color-darkblue);
+    background-color: var(--color-light);
+}
+.h-65{
+    height: 65px;
+}

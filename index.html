@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured Query Language</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="start-screen">
+        <div id="start-screen-img">
+            <img src="img/sql.png" width="200"></img>
+        </div>
+        <a id="go" href="#indice"><button>COMENZAR</button></a>
+        <p>Alonso Martinez & Alejandro Sosa - Desarrollo de Aplicaciones Multiplataforma - IES Azarquiel - Bases de
+            Datos</p>
+    </div>
+    <div id="indice">
+        <nav>
+            <ul>
+                <a href="#bases">
+                    <li>Bases de Datos</li>
+                </a>
+                <a href="#sql">
+                    <li>Structured Query Language</li>
+                </a>
+                <a href="#oracle">
+                    <li>Oracle</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <div id="content">
+        <div class="h-65" id="bases"></div>
+        <div class="content">
+            <h1>BASES DE DATOS</h1>
+            <nav class="submenu">
+                <ul>
+                    <a href="#datos">
+                        <li>Datos y su almacenamiento</li>
+                    </a>
+                    <a href="#sgbd">
+                        <li>Sistemas Gestores de Bases de Datos</li>
+                    </a>
+                    <a href="#relacional">
+                        <li>Modelo Relcional</li>
+                    </a>
+                </ul>
+            </nav>
+           
+            <h2 id="datos">Datos y su Almacenamiento</h2>
+            <p>Lo que entendemos cuando hablamos de <b>datos</b> es <b>información concreta</b>
+                sobre hechos o elementos que permite estudiarlos, analizarlos o conocerlos.
+            </p><br>
+            <p><b>¿Que es una base de datos y su función?</b><br>
+                Una base de datos es una recopilación organizada de información o datos estructurados, que normalmente
+                se almacena de forma electrónica en un sistema informático.
+                Normalmente, una base de datos está <b>controlada por un sistema de gestión de bases de datos
+                    (SGBD)</b>. <br>
+                En conjunto, los datos y el SGBD, junto con las aplicaciones asociadas a ellos, reciben el nombre de
+                <em>sistema de bases de datos</em>, abreviado normalmente a simplemente base de datos. <br><br>
+
+                Las bases de datos en funcionamiento actualmente se suelen utilizar como estructuras de <b>filas y
+                    columnas</b> en una serie de <b>tablas</b> para aumentar la eficacia del procesamiento y la consulta
+                de datos.
+                Así, se puede acceder, gestionar, modificar, actualizar, controlar y organizar fácilmente los datos. La
+                mayoría de las bases de datos utilizan un lenguaje de consulta estructurada (SQL) para escribir y
+                consultar datos.
+            </p><br>
+            <p>
+                Existen muchos tipos diferentes de bases de datos. La mejor base de datos para una organización
+                específica depende de cómo pretenda la organización utilizar los datos. <br><br>
+            <h3>Tipos :</h3><br><br>
+            <p><span class="title">Bases de datos relacionales:</span> Se hicieron predominantes en la década de 1980. Los elementos de
+                una base de datos relacional se organizan como un conjunto de tablas con columnas y filas. La tecnología de
+                bases de datos relacionales proporciona la forma más eficiente y flexible de acceder a información
+                estructurada. <br><br>
+                <span class="title">Bases de datos orientadas a objetos:</span> La información de una base de datos orientada a objetos se
+                representa en forma de objetos, como en la programación orientada a objetos. <br><br>
+                <span class="title">Bases de datos distribuidas</span>: Una base de datos distribuida consta de dos o más archivos que se
+                encuentran en sitios diferentes. La base de datos puede almacenarse en varios ordenadores, ubicarse en la
+                misma ubicación física o repartirse en diferentes redes. <br><br>
+                <span class="title">Almacenes de datos</span>: Un repositorio central de datos, un data warehouse es un tipo de base de
+                datos diseñado específicamente para consultas y análisis rápidos. <br><br>
+                <span class="title">Bases de datos NoSQL:</span> Una base de datos NoSQL, o base de datos no relacional, permite almacenar
+                y manipular datos no estructurados y semiestructurados (a diferencia de una base de datos relacional, que
+                define cómo se deben componer todos los datos insertados en la base de datos). Las bases de datos NoSQL se
+                hicieron populares a medida que las aplicaciones web se volvían más comunes y complejas. <br><br>
+                <span class="title">Bases de datos orientadas a grafos:</span> Una base de datos orientada a grafos almacena datos
+                relacionados con entidades y las relaciones entre entidades. <br><br>
+                <span class="title">Bases de datos OLTP:</span> Una base de datos OLTP es una base de datos rápida y analítica diseñada
+                para que muchos usuarios realicen un gran número de transacciones. <br><br>
+                <span class="title">Bases de datos de código abierto:</span> Un sistema de base de datos de código abierto es aquel cuyo
+                código fuente es de código abierto; tales bases de datos pueden ser bases de datos SQL o NoSQL. <br><br>
+                <span class="title">Bases de datos en la nube</span>: Una base de datos en la nube es una recopilación de datos,
+                estructurados o no estructurados, que reside en una plataforma de cloud computing privada, pública o
+                híbrida. Existen dos tipos de modelos de bases de datos en la nube: el modelo tradicional y el de base de
+                datos como servicios (database as a service, DBaaS). Con DBaaS, un proveedor de servicios realiza las tareas
+                administrativas y el mantenimiento. <br><br>
+                <span class="title">Base de datos multimodelo</span>: Las bases de datos multimodelo combinan distintos tipos de modelos
+                de bases de datos en un único servidor integrado. Esto significa que pueden incorporar diferentes tipos de
+                datos. <br><br>
+                <span class="title">Bases de datos de documentos/JSON:</span> Diseñadas para almacenar, recuperar y gestionar información
+                orientada a los documentos, las bases de datos de documentos son una forma moderna de almacenar los datos en
+                formato JSON en lugar de hacerlo en filas y columnas. <br><br>
+                <span class="title">Bases de datos de autogestión:</span> El tipo de base de datos más nuevo e innovador, las bases de
+                datos de autogestión (también conocidas como bases de datos autónomas) están basadas en la nube y utilizan
+                el machine learning para automatizar el ajuste de la base de datos, la seguridad, las copias de seguridad,
+                las actualizaciones y otras tareas de gestión rutinarias que tradicionalmente realizan los administradores
+                de bases de datos. <br><br>
+    
+                Estos son solo algunos de las varias docenas de tipos de bases de datos que se utilizan hoy en día. Otras
+                bases de datos menos comunes se adaptan a funciones científicas, financieras o de otro tipo muy específicas.</p>
+            
+            </p>
+
+            <h2 id="sgbd">Sistemas Gestores de Bases de Datos</h2>
+            <p>Un sistema gestor de bases de datos (SGBD) es un software constituido por una serie de programas dirigidos a crear, gestionar y administrar la información que se encuentra en la base de datos. Su principal objetivo es servir de interfaz entre los usuarios y las aplicaciones para facilitar la organización de los datos, garantizar su accesibilidad, calidad e integridad, brindando a su vez una manera eficaz de administrar esa información.
+                El lenguaje de manipulación, un lenguaje de definición de datos y un lenguaje de consulta son los tres componentes de un gestor de base de datos; por lo que puede trabajar a diferentes niveles, pero es invisible para el usuario final.</p>
+            <p>Un sistema de gestión de bases de datos no solo permite administrar la información y mantener su consistencia, sino que brinda la posibilidad de construir y definir la base de datos a diferentes niveles de abstracción para distintas aplicaciones, facilitando los procesos y su mantenimiento. Permite realizar las operaciones sobre la base de datos para luego brindar la información al usuario de forma eficiente y segura. Por tanto, entre las funciones de un gestor de bases de datos se encuentran:
+
+                Definición de los datos. Permite definir todos los objetos de la base de datos partiendo de definiciones en versión fuente, de manera que se pueden almacenar según su tipo o estructura.
+                Manipulación de los datos. Responde a las solicitudes del usuario para realizar operaciones de eliminación, actualización y extracción de datos, pero gracias a su independencia también permite modificar el esquema físico o lógico de la base de datos sin realizar cambios en las aplicaciones que la utilizan.
+                Preservar la seguridad e integridad de los datos. Ante una petición, el gestor de bases de datos aplica las medidas de seguridad definidas para garantizar la validez e integridad de los datos, evitando además los ataques o accesos de usuarios no autorizados.
+                Recuperación y restauración de los datos. Ante un fallo o actualización inconsistente, los gestores de bases de datos también brindan la posibilidad de recuperar y restaurar la información.
+                ¿Qué tipos de gestores de bases de datos existen?
+                Existen diferentes modelos para administrar los registros, los cuales difieren fundamentalmente en la forma en que se estructuran los datos. El modelo de base de datos relacional es el más popular y común, como es el caso de MySQL y Oracle Database. Los datos se estructuran en filas de tabla con la posibilidad de crear diferentes relaciones entre las filas y presentarlas en columnas con claves comunes.
+                
+                En el modelo de base de datos jerárquico los datos se organizan en relaciones padre-hijo siguiendo una estructura similar a la de un árbol, como la de IMS de IBM. Otra manera de organizar los datos es el modelo de red, en el que la información se estructura en forma de red con relaciones complejas y se pueden seguir diferentes caminos para rastrear cada registro.
+                
+                En el caso del modelo de bases de datos orientada a objetos, como PostgreSQL, normalmente usado para datos gráficos, no solo se tiene en cuenta la relación entre los registros de datos, sino también la herencia, de manera que los objetos pueden transferir algunos de sus atributos a otros objetos. Por último, el modelo de bases de datos orientadas a documentos permite almacenar los registros en diferentes documentos, como es el caso de CouchDB y OrientDB.</p>
+            
+                <h2 id="relacional">Modelo Relacional</h2>
+            <p>El modelo relacional, para el modelado y la gestión de bases de datos, es un modelo de datos basado en la lógica de predicados y en la teoría de conjuntos.
+
+                Tras ser postuladas sus bases en 1970 por Edgar Frank Codd, de los laboratorios IBM en San José (California), no tardó en consolidarse como un nuevo paradigma en los modelos de base de datos.
+                
+                Su idea fundamental es el uso de relaciones. Estas relaciones podrían considerarse en forma lógica como conjuntos de datos llamados tuplas. Pese a que esta es la teoría de las bases de datos relacionales creadas por Codd, la mayoría de las veces se conceptualiza de una manera más fácil de imaginar, pensando en cada relación como si fuese una tabla que está compuesta por registros (cada fila de la tabla sería un registro o “tupla”) y columnas (también llamadas “campos”).
+                
+                Es el modelo más utilizado en la actualidad para modelar problemas reales y administrar datos dinámicamente.
+                
+                El modelo relacional desarrolla un esquema de base de datos (data base schema) a partir del cual se podrá realizar el modelo físico o de implementación en el DBMS.
+                
+                Este modelo esta basado en que todos los datos están almacenados en tablas (entidades/relaciones) y cada una de estas es un conjunto de datos, por tanto una base de datos es un conjunto de relaciones. La agrupación se origina en la tabla: tabla -> fila (tupla) -> campo (atributo)
+                
+                El Modelo Relacional se ocupa de:
+                
+                La estructura de datos
+                La manipulación de datos
+                La integridad de los datos
+                Donde las relaciones estan formadas por :
+                
+                Atributos (columnas)
+                Tuplas (Conjunto de filas)
+                Existen dos formas para la construcción de modelos relacionales:
+                
+                Creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el esquema más óptimo,
+                O, convertir el modelo entidad relación (ER) en tablas, con una depuración lógica y la aplicación de restricciones de integridad.</p>
+        </div>
+        <div class="h-65" id="sql"></div>
+        <div class="content">
+            <h1>STRUCTURED QUERY LANGUAGE</h1>
+            <nav class="submenu">
+                <ul>
+                    <a href="#historia">
+                        <li>Historia</li>
+                    </a>
+                    <a href="#operadores">
+                        <li>Operadores</li>
+                    </a>
+                    <a href="#dml">
+                        <li>DML</li>
+                    </a>
+                    <a href="#ddl">
+                        <li>DDL</li>
+                    </a>
+                    <a href="#funciones">
+                        <li>Funciones</li>
+                    </a>
+                    <a href="#prog">
+                        <li>Programación PL / SQL</li>
+                    </a>
+                    <a href="#optim">
+                        <li>Optimización básica de SQL</li>
+                    </a>
+                </ul>
+            </nav>
+
+            <p>SQL es un acrónimo en inglés para Structured Query Language. Un <b>Lenguaje de Consulta Estructurado</b>.
+                Un tipo de lenguaje de programación que te permite <b>manipular y descargar datos de una base de
+                    datos</b>.
+                Tiene capacidad de hacer cálculos avanzados y álgebra.
+                Es utilizado en la mayoría de empresas que almacenan datos en una base de datos.
+                Ha sido y sigue siendo el lenguaje de programación más usado para bases de datos relacionales.</p>
+
+            <h2 id="historia">Historia</h2>
+            <p>La historia de SQL comienza en <b>1969</b>, cuando el investigador de <abbr
+                    title="International Business Machines Corporation es una reconocida empresa tecnológica multinacional estadounidense con sede en Armonk, Nueva York.">IBM</abbr>
+                <b>Edgar F. Codd</b> definió el modelo de base de datos relacional.
+                Unos años más tarde, IBM creó un lenguaje para los sistemas de gestión de bases de datos relacionales
+                basado en el trabajo de Codd.
+                Ese lenguaje primero se llamó <b>SEQUEL</b>, siglas de «Structured English Query Language» y después de
+                varias implementaciones y revisiones, pasó a llamarse SQL.
+                <br><br>Las pruebas comenzaron en <b>1978</b>, y luego IBM empezó a desarrollar productos comerciales
+                como SQL/DS en 1981 y DB2 en 1983. Le siguieron otros proveedores, como Sybase, Ingres u Oracle, que
+                lanzó su primer producto en 1979.
+                <br><br>
+                Las aplicaciones se pueden programar con diferentes lenguajes como Python, PHP o Ruby. Sin embargo,
+                históricamente, <b>las bases de datos no comprenden esos lenguajes</b>. Hasta hace poco, <b>solo
+                    entendían SQL</b> (aunque las cosas han cambiado mucho en los últimos años).
+                Esta es la razón por la que aprender SQL es indispensable para trabajar en los campos del desarrollo de
+                aplicaciones o desarrollo web. Antes de poder utilizarlo, es necesario aprender su «markup» o marcado.
+            </p>
+
+            <h2 id="operadores">Operadores</h2>
+            <p>El lenguaje SQL implementa varios tipos de operadores: <br><br>
+                <b>Operadores Lógicos</b><br>
+                Los operadores lógicos que soporta SQL son <b>AND, OR, XOR, Eqv, Imp, Is, Not</b><br>
+                Estos poseen la siguiente sintaxis: <span>&lt;expresion 1&gt; operador &lt;expresion
+                    2&gt;</span><br><br>
+                <b>Operador Between</b><br>
+                Para indicar que deseamos recuperar los registros según el intervalo de valores de un campo emplearemos
+                el operador Between: <br>
+                <span>SELECT * FROM Pedidos WHERE CodPostal <b>BETWEEN</b> 28000 And 28999</span> (Devuelve los pedidos
+                realizados en la provincia de Madrid) <br><br>
+                <b>Operador Like</b><br>
+                Se utiliza para comparar una expresión de cadena con un modelo en una expresión SQL. Su sintaxis es:
+                <br>
+                <span>expresi&oacute;n LIKE modelo</span><br><br>
+                <b>Operador IN</b><br>
+                Este operador devuelve aquellos registros cuyo campo indicado <b>coincide</b> con alguno de los
+                indicados en una lista. Su sintaxis es: <br>
+
+                <span>expresi&oacute;n [Not] In(valor1, valor2, . . .)</span><br>
+                <span>SELECT * FROM Pedidos WHERE Provincia In ('Madrid', 'Barcelona', 'Sevilla');</span><br><br>
+                <b>Clausula WHERE</b><br>
+                La cláusula WHERE puede usarse para <b>determinar qué registros de las tablas enumeradas en la cláusula
+                    FROM</b> aparecerán en los resultados de la instrucción SELECT. WHERE es opcional, pero cuando
+                aparece debe ir a continuación de FROM:
+                <span>SELECT Apellidos, Salario FROM Empleados <b>WHERE</b> Salario > 21000</span>
+                <br><br>
+                <b>Agrupamiento de registros (Agregaci&oacute;n) AVG</b><br>
+                Calcula la <b>media aritmética</b> de un conjunto de valores contenidos en un campo especificado de una
+                consulta: <br>
+                <span>Avg(expresi&oacute;n)</span>
+                La función Avg no incluye ningún campo Null en el cálculo. Un ejemplo del funcionamiento de AVG: <br>
+                <span>SELECT <b>Avg(Gastos)</b> AS Promedio FROM Pedidos WHERE Gastos > 100</span><br><br>
+                <b>MAX, MIN</b><br>
+                Devuelven el <b>mínimo o el máximo</b> de un conjunto de valores contenidos en un campo especifico de
+                una
+                consulta. Su sintaxis es: <span>Min(expresi&oacute;n) / Max(expresi&oacute;n)</span><br>
+                Un ejemplo de su uso: <span>SELECT Min(Gastos) AS ElMin FROM Pedidos WHERE Pais = 'Costa
+                    Rica'</span><br><br>
+                <b>SUM</b><br>
+                Devuelve la <b>suma del conjunto</b> de valores contenido en un campo especifico de una consulta. Su
+                sintaxis
+                es: <span>Sum(expresi&oacute;n)</span><br>
+                Por ejemplo: <span>SELECT Sum(PrecioUnidad * Cantidad) AS Total FROM DetallePedido</span><br><br>
+                <b>GROUP BY</b><br>
+                Combina los registros con valores idénticos, en la lista de campos especificados, en un único registro:
+                <br>
+                <span>SELECT campos FROM tabla WHERE criterio GROUP BY campos del grupo</span><br>
+                Todos los campos de la lista de campos de SELECT deben o bien incluirse en la cláusula GROUP BY o como
+                argumentos de una función SQL agregada:
+            </p>
+
+            <h2 id="dml">DML</h2>
+            <h2 id="ddl">DDL</h2>
+            <h2 id="funciones">Funciones</h2>
+            <h2 id="prog">Programación PL / SQL</h2>
+            <h2 id="optim">Optimización básica de SQL</h2>
+        </div>
+        <div class="h-65" id="oracle"></div>
+        <div class="content">
+            <h1>ORACLE</h1>
+            <nav class="submenu">
+                <ul>
+                    <a href="#qoracle">
+                        <li>¿Qué es Oracle?</li>
+                    </a>
+                    <a href="#servicios">
+                        <li>Servicios</li>
+                    </a>
+                    <a href="#sqloracle">
+                        <li>SQL de Oracle</li>
+                    </a>
+                    <a href="#adminoracle">
+                        <li>Administración en Oracle</li>
+                    </a>
+                </ul>
+            </nav>
+            <h2 id="qoracle">¿Qué es Oracle?</h2>
+            <p>Oracle es una herramienta para la gestión de bases de datos, usada principalmente por las grandes empresas para que estas puedan controlar y gestionar una gran cantidad de contenidos desde un solo archivo.
+               <br> De esta manera se consigue, además de reducir costes, minimizar el riesgo de pérdida de información.          
+               <br> Entre las acciones de Oracle se pueden destacar las siguientes: soporte de transacciones, estabilidad y soporte multiplataforma de Windows, Linux, Mac OS X, Unix y BDS.</p>
+            <h2 id="servicios">Servicios</h2>
+            <h2 id="sqloracle">SQL de Oracle</h2>
+            <h2 id="adminoracle">Administración de Oracle</h2>
+        </div>
+        <div id="back" class="back"><a href="#start-screen"><i class="fa fa-home" aria-hidden="true"></i></a></div>
+    </div>
+    <footer>
+        <p>Alonso Martínez</p>
+        <p>Alejandro Sosa</p>
+        <p>Desarrollo de Aplicaciones Multiplataforma</p>
+        <p>IES Azarquiel</p>
+        <p>Base de Datos</p>
+        <p><a href="mailto: alumno.574777@ies-azarquiel.es">Mail</a></p>
+    </footer>
+</body>
+
+</html>
