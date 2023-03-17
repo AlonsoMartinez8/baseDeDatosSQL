@@ -34,7 +34,11 @@
             </ul>
         </nav>
     </div>
-    <div class="banner"></div>
+    <div class="banner">
+        <h2>Este trabajo consiste en una recopilacion de información sobre las BASES DE DATOS, ORACLE y SQL.</h2>
+        <a href="#content"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Desliza <i
+                class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+    </div>
     <div id="content">
         <div class="h-65" id="bases"></div>
         <div class="content">
@@ -142,6 +146,9 @@
                 bases de datos menos comunes se adaptan a funciones científicas, financieras o de otro tipo muy
                 específicas.
             </p>
+            <p>
+            <div class="imgs"><img src="img/bbdd.png" width="600" alt=""></div>
+            </p>
 
             </p>
 
@@ -184,22 +191,35 @@
                 <em style="text-align: center;"><span class="title">¿Qué tipos de gestores de bases de datos
                         existen?</span></em><br><br>
                 Existen diferentes modelos para administrar los registros, los cuales difieren fundamentalmente en la
-                <b>forma en que se estructuran los datos</b>. El modelo de base de datos <b>relacional</b> es el más popular y común,
+                <b>forma en que se estructuran los datos</b>. El modelo de base de datos <b>relacional</b> es el más
+                popular y común,
                 como es el caso de <em>MySQL</em> y <em>Oracle Database</em>. <br>
                 Los datos se estructuran en filas de tabla con la
                 posibilidad de crear diferentes relaciones entre las filas y presentarlas en columnas con claves
                 comunes.
 
-                En el modelo de base de datos <span class="title">jerárquico</span> los datos se organizan en relaciones padre-hijo siguiendo una
-                estructura similar a la de un árbol, como la de IMS de IBM. <br><br>Otra manera de organizar los datos es el
-                <span class="title">modelo de red</span>, en el que la información se estructura en forma de red con relaciones complejas y se
+                En el modelo de base de datos <span class="title">jerárquico</span> los datos se organizan en relaciones
+                padre-hijo siguiendo una
+                estructura similar a la de un árbol, como la de IMS de IBM. <br><br>Otra manera de organizar los datos
+                es el
+                <span class="title">modelo de red</span>, en el que la información se estructura en forma de red con
+                relaciones complejas y se
                 pueden seguir diferentes caminos para rastrear cada registro. <br><br>
 
-                En el caso del modelo de bases de datos <span class="title">orientada a objetos</span>, como <em>PostgreSQL</em>, normalmente usado para
+                En el caso del modelo de bases de datos <span class="title">orientada a objetos</span>, como
+                <em>PostgreSQL</em>, normalmente usado para
                 datos gráficos, no solo se tiene en cuenta la relación entre los registros de datos, sino también la
                 herencia, de manera que los objetos pueden transferir algunos de sus atributos a otros objetos. <br><br>
-                Por último, el modelo de bases de datos <span class="title">orientadas a documentos</span> permite almacenar los registros en
+                Por último, el modelo de bases de datos <span class="title">orientadas a documentos</span> permite
+                almacenar los registros en
                 diferentes documentos, como es el caso de CouchDB y OrientDB.
+            </p>
+            <p>
+            <div class="imgs">
+                <img src="img/MySQL-logo.png" alt="" width="100">
+                <img src="img/sqlDeveloper.png" alt="" width="100">
+                <img src="img/PostgreSql.png" alt="" width="100">
+            </div>
             </p>
 
             </p>
@@ -208,40 +228,47 @@
             <p>El modelo relacional, para el modelado y la gestión de bases de datos, es un modelo de datos basado en la
                 lógica de predicados y en la teoría de conjuntos. <br>
 
-                Tras ser postuladas sus bases en 1970 por <span class="title">Edgar Frank Codd</span>, de los laboratorios IBM en San José
+                Tras ser postuladas sus bases en 1970 por <span class="title">Edgar Frank Codd</span>, de los
+                laboratorios IBM en San José
                 (California), no tardó en consolidarse como un nuevo paradigma en los modelos de base de datos.<br><br>
 
-                Su idea fundamental es el uso de <span class="title">relaciones</span> . Estas relaciones podrían considerarse en forma lógica como
+                Su idea fundamental es el uso de <span class="title">relaciones</span> . Estas relaciones podrían
+                considerarse en forma lógica como
                 conjuntos de datos llamados tuplas. Pese a que esta es la teoría de las bases de datos relacionales
                 creadas por Codd, la mayoría de las veces se conceptualiza de una manera más fácil de imaginar, pensando
-                en cada relación como si fuese una tabla que está compuesta por registros <b>(cada fila de la tabla sería
-                un registro o “tupla”)</b> y columnas <b>(también llamadas “campos”).</b><br><br>
+                en cada relación como si fuese una tabla que está compuesta por registros <b>(cada fila de la tabla
+                    sería
+                    un registro o “tupla”)</b> y columnas <b>(también llamadas “campos”).</b><br><br>
 
                 Es el modelo más utilizado en la actualidad para modelar problemas reales y administrar datos
                 dinámicamente.<br>
 
-                El modelo relacional desarrolla un esquema de base de datos <b>(data base schema)</b> a partir del cual se
+                El modelo relacional desarrolla un esquema de base de datos <b>(data base schema)</b> a partir del cual
+                se
                 podrá realizar el modelo físico o de implementación en el <b>DBMS.</b><br><br>
 
-                Este modelo esta basado en que todos los datos están almacenados en tablas <b>(entidades/relaciones)</b> y cada
+                Este modelo esta basado en que todos los datos están almacenados en tablas <b>(entidades/relaciones)</b>
+                y cada
                 una de estas es un conjunto de datos, por tanto una base de datos es un conjunto de relaciones. La
                 agrupación se origina en la tabla:<b> tabla -> fila (tupla) -> campo (atributo)</b><br><br>
 
                 El <span class="title">Modelo Relacional</span> se ocupa de:<br>
                 <b>-La estructura de datos<br>
-                -La manipulación de datos<br> 
-                -La integridad de los datos.</b> <br><br>
-                
+                    -La manipulación de datos<br>
+                    -La integridad de los datos.</b> <br><br>
+
                 Donde las <span class="title">relaciones</span> estan formadas por :<br>
-                <b>-Atributos (columnas) <br> 
-                -Tuplas (Conjunto de filas)<br><br></b>
-                
+                <b>-Atributos (columnas) <br>
+                    -Tuplas (Conjunto de filas)<br><br></b>
+
                 Existen dos formas para la construcción de <span class="title">modelos relacionales:</span><br><br>
 
                 -Creando un conjunto de tablas iniciales y aplicando operaciones de normalización hasta conseguir el
                 esquema más óptimo. <br>
-                -O convertir el <b>modelo entidad relación (ER)</b>  en tablas, con una depuración lógica y la aplicación de
-                restricciones de integridad.<br><br></p>
+                -O convertir el <b>modelo entidad relación (ER)</b> en tablas, con una depuración lógica y la aplicación
+                de
+                restricciones de integridad.<br><br>
+            </p>
         </div>
         <div class="h-65" id="sql"></div>
         <div class="content">
@@ -280,23 +307,32 @@
                 Ha sido y sigue siendo el lenguaje de programación más usado para bases de datos relacionales.</p>
 
             <h2 id="historia">Historia</h2>
-            <p>La historia de SQL comienza en <b>1969</b>, cuando el investigador de <abbr
-                    title="International Business Machines Corporation es una reconocida empresa tecnológica multinacional estadounidense con sede en Armonk, Nueva York.">IBM</abbr>
-                <b>Edgar F. Codd</b> definió el modelo de base de datos relacional.
-                Unos años más tarde, IBM creó un lenguaje para los sistemas de gestión de bases de datos relacionales
-                basado en el trabajo de Codd.
-                Ese lenguaje primero se llamó <b>SEQUEL</b>, siglas de «Structured English Query Language» y después de
-                varias implementaciones y revisiones, pasó a llamarse SQL.
-                <br><br>Las pruebas comenzaron en <b>1978</b>, y luego IBM empezó a desarrollar productos comerciales
-                como SQL/DS en 1981 y DB2 en 1983. Le siguieron otros proveedores, como Sybase, Ingres u Oracle, que
-                lanzó su primer producto en 1979.
-                <br><br>
-                Las aplicaciones se pueden programar con diferentes lenguajes como Python, PHP o Ruby. Sin embargo,
+            <div class="row">
+                <p>La historia de SQL comienza en <b>1969</b>, cuando el investigador de <abbr
+                        title="International Business Machines Corporation es una reconocida empresa tecnológica multinacional estadounidense con sede en Armonk, Nueva York.">IBM</abbr>
+                    <b>Edgar F. Codd</b> definió el modelo de base de datos relacional.
+                    Unos años más tarde, IBM creó un lenguaje para los sistemas de gestión de bases de datos
+                    relacionales
+                    basado en el trabajo de Codd.
+                    Ese lenguaje primero se llamó <b>SEQUEL</b>, siglas de «Structured English Query Language» y después
+                    de
+                    varias implementaciones y revisiones, pasó a llamarse SQL.
+                    <br><br>Las pruebas comenzaron en <b>1978</b>, y luego IBM empezó a desarrollar productos
+                    comerciales
+                    como SQL/DS en 1981 y DB2 en 1983. Le siguieron otros proveedores, como Sybase, Ingres u Oracle, que
+                    lanzó su primer producto en 1979.
+                    <br><br>
+                    Las aplicaciones se pueden programar con diferentes lenguajes como Python, PHP o Ruby. Sin embargo,
                 históricamente, <b>las bases de datos no comprenden esos lenguajes</b>. Hasta hace poco, <b>solo
                     entendían SQL</b> (aunque las cosas han cambiado mucho en los últimos años).
+                </p>
+                <p>
+                <div class="imgs"><img src="img/Edgar_F_Codd.jpg" alt=""></div>
+                </p>
+            </div>
+            <p>
                 Esta es la razón por la que aprender SQL es indispensable para trabajar en los campos del desarrollo de
-                aplicaciones o desarrollo web. Antes de poder utilizarlo, es necesario aprender su «markup» o marcado.
-            </p>
+                aplicaciones o desarrollo web. Antes de poder utilizarlo, es necesario aprender su «markup» o marcado.</p>
 
             <h2 id="operadores">Operadores</h2>
             <p>El lenguaje SQL implementa varios tipos de operadores: <br><br>
@@ -352,30 +388,38 @@
 
             <h2 id="dml">DML</h2>
             <p>
-                Lenguaje de Manipulación de Datos <em>(Data Manipulation Language, DML)</em> es un lenguaje proporcionado por los
-                sistemas gestores de bases de datos que permite a los usuarios de la misma <b>llevar a cabo las tareas de
-                consulta o modificación de los datos</b> contenidos en las Bases de Datos del Sistema Gestor de Bases de
+                Lenguaje de Manipulación de Datos <em>(Data Manipulation Language, DML)</em> es un lenguaje
+                proporcionado por los
+                sistemas gestores de bases de datos que permite a los usuarios de la misma <b>llevar a cabo las tareas
+                    de
+                    consulta o modificación de los datos</b> contenidos en las Bases de Datos del Sistema Gestor de
+                Bases de
                 Datos. <br><br>
 
                 El lenguaje de manipulación de datos más popular hoy en día es SQL, usado para recuperar y manipular
-                datos en una base de datos relacional. Otros ejemplos de DML son los usados por bases de datos <em>IMS/DL1</em>,
+                datos en una base de datos relacional. Otros ejemplos de DML son los usados por bases de datos
+                <em>IMS/DL1</em>,
                 <em>CODASYL</em> u otras.
             </p>
             <h2 id="ddl">DDL</h2>
             <p>
                 Es un lenguaje de programación para <b>definir estructuras de datos</b>, proporcionado por los sistemas
-                gestores de bases de datos, en este caso <em>PostgreSQL</em>. En inglés, <b>Data Definition Language</b>, de ahí sus
+                gestores de bases de datos, en este caso <em>PostgreSQL</em>. En inglés, <b>Data Definition
+                    Language</b>, de ahí sus
                 siglas DDL.
                 <br><br>
-                Este lenguaje permite a los programadores de un sistema gestor de base de datos, como Postgres, <b>definir
-                las estructuras</b> que almacenarán los datos así como los procedimientos o funciones que permitan
+                Este lenguaje permite a los programadores de un sistema gestor de base de datos, como Postgres,
+                <b>definir
+                    las estructuras</b> que almacenarán los datos así como los procedimientos o funciones que permitan
                 consultarlos. <br><br>
 
                 Para definir las estructura disponemos de <span class="title">tres sentencias</span>: <br><br>
 
                 <b>CREATE</b>, se usa para crear una base de datos, tabla, vistas, etc. <br>
-                <b>ALTER</b>, se utiliza para modificar la estructura, por ejemplo añadir o borrar columnas de una tabla. <br>
-                <b>DROP</b>, con esta sentencia, podemos eliminar los objetos de la estructura, por ejemplo un índice o una
+                <b>ALTER</b>, se utiliza para modificar la estructura, por ejemplo añadir o borrar columnas de una
+                tabla. <br>
+                <b>DROP</b>, con esta sentencia, podemos eliminar los objetos de la estructura, por ejemplo un índice o
+                una
                 secuencia.
             </p>
             <h2 id="funciones">Funciones</h2>
@@ -386,10 +430,11 @@
                 <b>LEN()</b> Devuelve la longitud de un campo de texto <br><br>
                 <b>NOW()</b> Devuelve la hora y fecha actuales del sistema <br><br>
                 <b>FORMAT()</b> Da formato a un formato para mostrarlo
-            </p> 
-            <h2 id="prog">Programación PL / SQL</h2> 
+            </p>
+            <h2 id="prog">Programación PL / SQL</h2>
             <p>
-                PL/SQL es el lenguaje de programación que proporciona Oracle para <b>extender el SQL estándar</b> con otro tipo
+                PL/SQL es el lenguaje de programación que proporciona Oracle para <b>extender el SQL estándar</b> con
+                otro tipo
                 de instrucciones y elementos propios de los lenguajes de programación. <br><br>
 
                 Con PL/SQL vamos a poder <b>programar las unidades de programa de la base de datos Oracle:</b><br>
@@ -399,7 +444,8 @@
                 <span class="title">Triggers</span><br>
                 <span class="title">Scripts</span><br><br>
 
-                Pero además, PL/SQL nos permite <b>realizar programas</b> sobre las siguientes herramientas de Oracle: <br>
+                Pero además, PL/SQL nos permite <b>realizar programas</b> sobre las siguientes herramientas de Oracle:
+                <br>
 
                 <span class="title">Oracle Forms</span><br>
                 <span class="title">Oracle Reports</span><br>
@@ -407,7 +453,8 @@
                 <span class="title">Oracle Aplication Server</span>
             </p>
             <h2 id="optim">Optimización básica de SQL</h2>
-            <p>El primer tip de optimización de una base de datos SQL, es <b>invertir el tiempo en aprender SQL a detalle.</b><br>
+            <p>El primer tip de optimización de una base de datos SQL, es <b>invertir el tiempo en aprender SQL a
+                    detalle.</b><br>
                 En muchas ocasiones, un mismo resultado puede obtenerse con distintos tipos de consultas, en ocasiones,
                 3 consultas se pueden ejecutar en una sola. <br><br>
                 Para que puedas analizar y concluir cuál es la mejor forma de obtener un resultado complejo, debes de
@@ -416,35 +463,47 @@
                 problemas de rendimiento en la ejecución de una consulta. <br><br>
 
                 <span class="title">Índices</span><br>
-                Los motores de bases de datos SQL pueden <b>agregar índice</b>s a ciertas columnas que aceleran las queries. <br>
-                Este proceso se actualiza en inserción por lo que hay un <abbr title="trade off">compensación</abbr> al agregar un index, inserciones
+                Los motores de bases de datos SQL pueden <b>agregar índice</b>s a ciertas columnas que aceleran las
+                queries. <br>
+                Este proceso se actualiza en inserción por lo que hay un <abbr title="trade off">compensación</abbr> al
+                agregar un index, inserciones
                 ligeramente más lentas y consultas más rápidas. <br>
-                El uso correcto de índices puede <b>acelerar consultas</b> en tablas con muchos registros, pero sobre todo, el
-                mal uso de ellos puedes traducirse en <b>consultas muy lentas</b> que afectan el rendimiento de la página. <br><br>
+                El uso correcto de índices puede <b>acelerar consultas</b> en tablas con muchos registros, pero sobre
+                todo, el
+                mal uso de ellos puedes traducirse en <b>consultas muy lentas</b> que afectan el rendimiento de la
+                página. <br><br>
 
-                Una de las causas principales por las que una consulta se ejecuta muy lento, es que hagas <b>operaciones sobre un
-                campo que no tiene un index.</b><br>
+                Una de las causas principales por las que una consulta se ejecuta muy lento, es que hagas <b>operaciones
+                    sobre un
+                    campo que no tiene un index.</b><br>
                 En otros escenarios los indexes están pero <b>no se están usando</b>. <br><br>
 
                 <span class="title">El problema de N+1 consultas</span><br>
-                El problema de N+1 queries describe los escenarios en los que <b>por cada elemento de una lista</b> con la que
+                El problema de N+1 queries describe los escenarios en los que <b>por cada elemento de una lista</b> con
+                la que
                 trabajamos, es solo una referencia,
-                ya que en el <b>mundo real es fácil introducir problemas de N+2, N+3</b> etc. donde cada elemento en la lista
+                ya que en el <b>mundo real es fácil introducir problemas de N+2, N+3</b> etc. donde cada elemento en la
+                lista
                 introduce <b>múltiples queries</b>. <br><br>
 
-                En los escenarios donde las consultas son escritas <b>manualment</b>e, es prácticamente imposible encontrar uno
-                de estos casos, normalmente los encontramos como resultado del <b>al uso de una librería</b>m para el manejo de
+                En los escenarios donde las consultas son escritas <b>manualment</b>e, es prácticamente imposible
+                encontrar uno
+                de estos casos, normalmente los encontramos como resultado del <b>al uso de una librería</b>m para el
+                manejo de
                 la base de datos en nuestro código. <br><br>
 
                 Para solucionar estos escenarios, la recomendación general es; <b>hacer una carga anticipada de los
-                registros usando alguno de los distintos mecanismos que nuestras librerías de base de datos ofrecen</b>.
+                    registros usando alguno de los distintos mecanismos que nuestras librerías de base de datos
+                    ofrecen</b>.
                 Esto usualmente se traduce en el uso correcto de operaciones <b>JOIN</b> en nuestras consultas. <br><br>
 
                 <span class="title">Conclusión</span><br>
-                Estos son solo algunos tips que pueden seguirse para optimizar tus consultas, hay muchos más que aplican en
+                Estos son solo algunos tips que pueden seguirse para optimizar tus consultas, hay muchos más que aplican
+                en
                 escenarios distintos a los que aquí hemos cubierto. <br>
 
-                Para cada caso es importante: 1. <b>Medir</b> 2. <b>Conocer formas alternas de llegar al mismo resultado</b><br>
+                Para cada caso es importante: 1. <b>Medir</b> 2. <b>Conocer formas alternas de llegar al mismo
+                    resultado</b><br>
 
                 Para sacar el mayor provecho del tiempo que inviertes en optimización, debes concentrarte
                 en los problemas cuya solución traiga el mayor impacto en los resultados.
@@ -478,6 +537,7 @@
                 <br> Entre las acciones de Oracle se pueden destacar las siguientes: <b>soporte de transacciones,
                     estabilidad y soporte multiplataforma de Windows, Linux, Mac OS X, Unix y BDS.</b>
             </p>
+            <p><div class="imgs"><img src="img/Oracle_logo.svg.png" width="600" alt=""></div></p>
             <h2 id="servicios">Servicios</h2>
             <p> <span class="title">Oracle Consulting</span> <br>
                 Los servicios de consulterías que ofrece oracle son: <b>Servicios de planificación de servicios
@@ -491,7 +551,8 @@
                     Siebel CRM, Oracle Database, software, sistemas y productos de almacenamiento.</b> <br><br>
                 <span class="title">Oracle University </span><br>
                 Oracle University ayuda a los clientes a adquirir aptitudes con las aplicaciones de <b>Oracle Cloud
-                Infrastructure (OCI) y SaaS.</b>  Oracle Guided Learning está integrado con <b>Oracle Cloud Applications</b> , con lo
+                    Infrastructure (OCI) y SaaS.</b> Oracle Guided Learning está integrado con <b>Oracle Cloud
+                    Applications</b> , con lo
                 que aporta información y orientación actualizadas en al flujo de trabajo del usuario. <br><br>
 
                 <span class="title">Oracle Financing </span><br>
@@ -533,8 +594,9 @@
                 varias bases de datos.<br><br>
 
                 <span class="title">Oracle SQL Developer:</span> aplicación gráfica que permite ejecutar <b>consultas o
-                scripts SQL</b> , gestionar los
-                objetos de una base de datos (tablas, vistas, etc.), desarrollar y utilizar programas <b>PL/SQL</b> y realizar
+                    scripts SQL</b> , gestionar los
+                objetos de una base de datos (tablas, vistas, etc.), desarrollar y utilizar programas <b>PL/SQL</b> y
+                realizar
                 algunas tareas de administración.<br><br>
             </p>
         </div>
