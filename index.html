@@ -407,72 +407,46 @@
                 <span class="title">Oracle Aplication Server</span>
             </p>
             <h2 id="optim">Optimización básica de SQL</h2>
-            <p>El primer tip de optimización de una base de datos SQL, es invertir el tiempo en aprender SQL a detalle.
+            <p>El primer tip de optimización de una base de datos SQL, es <b>invertir el tiempo en aprender SQL a detalle.</b><br>
                 En muchas ocasiones, un mismo resultado puede obtenerse con distintos tipos de consultas, en ocasiones,
-                3 consultas se pueden ejecutar en una sola.
-                Para que tú puedas analizar y concluir cuál es la mejor forma de obtener un resultado complejo, debes de
-                conocer las distintas posibilidades y el impacto que tiene cada una de ellas.</p>
+                3 consultas se pueden ejecutar en una sola. <br><br>
+                Para que puedas analizar y concluir cuál es la mejor forma de obtener un resultado complejo, debes de
+                conocer las distintas posibilidades y el impacto que tiene cada una de ellas.</p><br>
             <p>Dicho esto, a continuación una serie de revisiones generales que puedes aplicar para muchos tipos de
-                problemas de rendimiento en la ejecución de una consulta.
+                problemas de rendimiento en la ejecución de una consulta. <br><br>
 
-                Índices
-                Los motores de bases de datos SQL pueden agregar índices a ciertas columnas que aceleran las queries.
+                <span class="title">Índices</span><br>
+                Los motores de bases de datos SQL pueden <b>agregar índice</b>s a ciertas columnas que aceleran las queries. <br>
+                Este proceso se actualiza en inserción por lo que hay un <abbr title="trade off">compensación</abbr> al agregar un index, inserciones
+                ligeramente más lentas y consultas más rápidas. <br>
+                El uso correcto de índices puede <b>acelerar consultas</b> en tablas con muchos registros, pero sobre todo, el
+                mal uso de ellos puedes traducirse en <b>consultas muy lentas</b> que afectan el rendimiento de la página. <br><br>
 
-                Este proceso se actualiza en inserción por lo que hay un trade off al agregar un index, inserciones
-                ligeramente más lentas y consultas más rápidas.
+                Una de las causas principales por las que una consulta se ejecuta muy lento, es que hagas <b>operaciones sobre un
+                campo que no tiene un index.</b><br>
+                En otros escenarios los indexes están pero <b>no se están usando</b>. <br><br>
 
-                El uso correcto de índices puede acelerar consultas en tablas con muchos registros, pero sobre todo, el
-                mal uso de ellos puedes traducirse en consultas muy lentas que afectan el rendimiento de la página
+                <span class="title">El problema de N+1 consultas</span><br>
+                El problema de N+1 queries describe los escenarios en los que <b>por cada elemento de una lista</b> con la que
+                trabajamos, es solo una referencia,
+                ya que en el <b>mundo real es fácil introducir problemas de N+2, N+3</b> etc. donde cada elemento en la lista
+                introduce <b>múltiples queries</b>. <br><br>
 
-                Una de las principales por las que una consulta se ejecuta muy lento, es que hagas operaciones sobre un
-                campo que no tiene un index.
-                En otros escenarios los indexes están pero no se están usando
-                El problema de N+1 consultas
-                El problema de N+1 queries describe los escenarios en los que por cada elemento de una lista con la que
-                trabajamos, como en el ejemplo la lista de cursos se introduce un query nuevo, es solo una referencia,
-                ya que en el mundo real es fácil introducir problemas de N+2, N+3 etc. donde cada elemento en la lista
-                introduce múltiples queries.
+                En los escenarios donde las consultas son escritas <b>manualment</b>e, es prácticamente imposible encontrar uno
+                de estos casos, normalmente los encontramos como resultado del <b>al uso de una librería</b>m para el manejo de
+                la base de datos en nuestro código. <br><br>
 
-                En los escenarios donde las consultas son escritas manualmente, es prácticamente imposible encontrar uno
-                de estos casos, normalmente los encontramos como resultado del mal uso de una librería para el manejo de
-                la base de datos en nuestro código.
+                Para solucionar estos escenarios, la recomendación general es; <b>hacer una carga anticipada de los
+                registros usando alguno de los distintos mecanismos que nuestras librerías de base de datos ofrecen</b>.
+                Esto usualmente se traduce en el uso correcto de operaciones <b>JOIN</b> en nuestras consultas. <br><br>
 
-                Para solucionar estos escenarios, la recomendación general es;hacer una carga anticipada de los
-                registros usando alguno de los distintos mecanismos que nuestras librerías de base de datos ofrecen.
-                Esto usualmente se traduce en el uso correcto de operaciones JOIN en nuestras consultas.
-                Campos caché
-                Aunque el concepto campos de caché acaba de ser inventado por mí al redactar este artículo, esta
-                estrategia es muy común y dependiendo del escenario en el que funcionen estos campos, reciben nombres
-                distintos, yo decidí agrupar estos escenarios bajo el nombre campos caché.
-                Caché de conteo
-                Considera un ejemplo como el de CódigoFacilito, donde tenemos una tabla cursos y una tabla adicional con
-                los cursos que ha tomado cada estudiante, si bien la tabla cursos es relativamente pequeña con cientos
-                de registros, la tabla de los cursos tomados por los alumnos tiene cientos de miles de registros.
+                <span class="title">Conclusión</span><br>
+                Estos son solo algunos tips que pueden seguirse para optimizar tus consultas, hay muchos más que aplican en
+                escenarios distintos a los que aquí hemos cubierto. <br>
 
-                Resulta que una de las consultas más comunes es saber cuántos cursos tiene cada alumno o cuáles son los
-                cursos con más alumnos. Estos escenarios representan un problema de desafío porque para realizar el
-                conteo hay que considerar el tamaño de cada tabla, en este ejemplo, la tabla con los cursos tomados por
-                los alumnos es grande.
+                Para cada caso es importante: 1. <b>Medir</b> 2. <b>Conocer formas alternas de llegar al mismo resultado</b><br>
 
-                Para evitar que, en cada ocasión que queramos saber la cantidad de alumnos en un curso, consultemos la
-                tabla grande, decidimos agregar una consulta a la tabla cursos, con el conteo de registros en la tabla
-                grande:
-                Otro tipo de campos caché
-                Casi cualquier operación costosa, llámense sumas, conteos, joins o promedios, pueden beneficiarse en
-                velocidad con un campo caché.
-
-                Estos campos deben seleccionarse cuidadosamente, ya que los beneficios vienen con un costo en el momento
-                de escritura.
-
-                Recientemente en un caso dentro de nuestra plataforma, reducimos el tiempo de ejecución de una consulta,
-                colocando una relación con otra tabla que antes se calculaba vía JOINs.
-                Conclusión
-                Eston son solo algunos tips que puede seguir para optimizar tus consultas, hay muchos más que aplican en
-                escenarios distintos a los que aquí hemos cubierto.
-
-                Para cada caso es importante: 1. Medir 2. Conocer formas alternas de llegar al mismo resultado
-
-                Recuerda que para sacar el mayor provecho del tiempo que inviertes en optimización, debes concentrarte
+                Para sacar el mayor provecho del tiempo que inviertes en optimización, debes concentrarte
                 en los problemas cuya solución traiga el mayor impacto en los resultados.
             </p>
         </div>
